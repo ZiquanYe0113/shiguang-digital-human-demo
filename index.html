@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>时光数字人 · 项目展示</title>
+<link rel="stylesheet" href="showcase.css">
+<main>
+  <header><strong>时光数字人</strong><span>项目案例 · 离线原型</span></header>
+  <section class="hero">
+    <div><p class="ribbon">AI 数字人 · 家庭纪念</p>
+    <h1>给回忆留一个<br>可以打开的地方。</h1>
+    <p>时光数字人是一款面向家庭纪念场景的交互原型。用照片、声音和文字，体验数字人对话与纪念影像创作。</p>
+    <nav aria-label="项目入口"><a class="primary" href="demo.html">体验 Demo</a><a href="#technical">查看技术方案</a></nav></div>
+    <figure><img src="sample.svg" alt="一幅人物站在夕阳花园中的示例插画"><figcaption>示例插画 · 非真实用户素材</figcaption></figure>
+  </section>
+  <section class="overview">
+    <article><h2>项目缘起</h2><p>清明前夕，我们看到有人分享如何保存亲人的照片、声音和故事，也看到有人对数字纪念感兴趣。我们以此为切入点，探索一种温和的纪念方式。数字人是 AI 演示，不代表真实人物。</p></article>
+    <article><h2>我的工作</h2><p>参与早期需求梳理与方案设计，规划数字人对话、声音复刻、图片创作和数字人视频四项体验，梳理从素材输入、任务提交到结果预览的交互流程，并设计模型服务的接入路径。</p></article>
+  </section>
+  <section><h2>可以体验什么</h2><div class="cards">
+    <article><small>01</small><h3>数字人对话</h3><p>输入文字，查看演示回复和对话记录。</p></article>
+    <article><small>02</small><h3>声音复刻</h3><p>体验选择音频、提交与查看音色状态，不会生成真实复刻音色。</p></article>
+    <article><small>03</small><h3>图片创作</h3><p>切换文生图或图生图，填写提示词，预览示例图片。</p></article>
+    <article><small>04</small><h3>数字人视频</h3><p>选择人物图与动作，提交任务，查看模拟结果。</p></article>
+  </div></section>
+  <section id="technical" class="technical"><h2>技术方案</h2>
+    <p>浏览器界面目前使用本地模拟服务。正式接入时，由自有后端负责模型调用、密钥和素材授权校验；视频任务提交后查询进度并返回结果。</p>
+    <dl><dt>对话与语音</dt><dd>拟接入豆包语言模型、语音识别、语音合成与声音复刻。</dd><dt>图片</dt><dd>拟接入 Nano Banana 系列。</dd><dt>视频</dt><dd>拟接入 Seedance 系列，预留异步任务提交与查询。</dd></dl>
+    <p class="status">当前状态：前端可操作 · 结果为模拟 · 真实 API 待接入</p>
+  </section>
+  <footer>时光数字人 · 本地作品集预览</footer>
+</main>
+</html>
